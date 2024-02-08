@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+  <link rel="manifest" href="img/icons/site.webmanifest">
+  <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#9f28db">
+  <link rel="shortcut icon" href="img/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Code Style CSS</title>
+
+  <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+  <article>
+    <h1>Code Style CSS</h1>
+
+    <p>Хороший код — это код который удобно читать и поддерживать.</p>
+
+    <ul>
+      <li>
+        <p>Хороший код должен быть простым:</p>
+        <ul>
+          <li>используйте легко читаемые селекторы и говорящие классы. По ним сразу можно понять к чему применяются стили.</li>
+          <li>классы пишите в нижнем регистре (строчными буквами).</li>
+          <li>вместо пробела в классах используйте знак «дефис». Старайтесь не использовать нижнее подчеркивание и camelCase.</li>
+          <li>код должен быть в одном стиле: везде используется один порядок свойств, одинаковые отступы и пробелы, один стиль записи цветов и псевдоэлементов.</li>
+        </ul>
+
+        <figure class="figure-image">
+          <figure>
+            <img src="img/bad_example.png" alt="Пример плохого css кода" width="400">
+            <figcaption class="description">Плохо</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/good_example.png" alt="Пример хорошего css кода" width="400">
+            <figcaption class="description">Хорошо</figcaption>
+          </figure>
+        </figure>
+      </li>
+
+      <li>
+        <p>Оформляем блок со свойствами:</p>
+        <ul>
+          <li>после селектора, перед открывающей блок «фигурной скобкой» ставьте «пробел».</li>
+          <li>в начале строки перед свойствами ставится «два пробела». Это самый популярный вариант.</li>
+          <li>после двоеточия ставьте «пробел».</li>
+          <li>обязательно ставить «точку с запятой» в конце свойства.</li>
+          <li>ставьте закрывающую «фигурную скобку» на новой строке.</li>
+        </ul>
+      </li>
+
+      <li>
+        <p>Между набором правил оставляйте одну пустую строку:</p>
+        <img class="image" src="img/indent.png" alt="Пример отступа между наборами правил css">
+      </li>
+
+      <li>
+        <p>Все стили пишем через селектор класса. Теги используем только для глобальных стилей, id в стилях не используем.</p>
+      </li>
+
+      <li>
+        <p>Избегайте использование !important.</p>
+      </li>
+
+      <li>
+        <p>Псевдокласс nth-child используем только со значениями even и odd. В остальных случая используем дополнительный класс.</p>
+      </li>
+
+      <li>
+        <p>Сохраняйте уровень вложенности не более двух элементов, если не используем БЭМ.  Плохо: .block .faq .title. Хорошо: .faq .title. При использовании БЭМ вложенность не используется.</p>
+      </li>
+
+      <li>
+        <p>Обязательно указывайте альтернативный вид и тип семейства шрифтов.</p>
+      </li>
+
+      <li>
+        <p>Проверяйте вёрстку на переполнение.</p>
+      </li>
+
+      <li>
+        <p>У интерактивных элементов обязательны стили состояний: hover, focus, active, disabled. </p>
+      </li>
+
+      <li>
+        <p>Если используете свойство display: inline-block, обязательно добавляйте свойство vertical-align.</p>
+      </li>
+
+      <li>
+        <p>Свойство position используем в крайнем случае. Исключение: если иначе сделать невозможно или сложно.</p>
+      </li>
+
+      <li>
+        <p>У нулевых значений не нужно писать единицы измерения. Когда значение 0, то не важно это px, % или попугайчики.</p>
+      </li>
+
+      <li>
+        <p>Значения цвета hex пишем в нижнем регистре.</p>
+      </li>
+
+      <li>
+        <p>Проверяйте css в <a href="https://jigsaw.w3.org/css-validator/">валидаторе.</a></p>
+      </li>
+
+      <li>
+        <p>В названиях файлов и папок используйте только латиницу и буквы в нижнем регистре, без пробелов. Для разделения слов используйте «дефис» или нижние подчёркивание.</p>
+      </li>
+    </ul>
+  </article>
+</body>
+</html>
